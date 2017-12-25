@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+html,body
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 0;
+}
+
+.alice-wrapping-paper
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: -webkit-grab;
+}
+
+@media (max-aspect-ratio: 800/450)
+{
+    .alice
+    {
+        height: 100% !important;
+        width: auto !important;
+    }
+}
+
+.alice
+{
+    height: auto;
+    width: 100%;
+}
+
+.not-alice
+{
+    display: none;
+    width: 0;
+    height: 0;
+}
